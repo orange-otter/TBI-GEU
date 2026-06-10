@@ -42,7 +42,7 @@ function createMockContext(): TrpcContext {
     } as TrpcContext["req"],
     res: {
       clearCookie: () => {},
-    } as TrpcContext["res"],
+    } as any,
   };
 }
 
